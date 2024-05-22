@@ -6,8 +6,11 @@ import imageTransformDesktop from "./assets/images/desktop/image-transform.jpg";
 import imageStandoutMobile from "./assets/images/mobile/image-stand-out.jpg";
 import imageStandoutDesktop from "./assets/images/desktop/image-stand-out.jpg";
 
+import data from "../data.json";
 
 const App = () => {
+  const testimonalData = data.testimonals;
+  const galleryData = data.photoGallery;
 
   return (
     <>
@@ -120,7 +123,48 @@ const App = () => {
             </article>
           </div>
         </section>
+        {/***************************** TESTIMONALS - SECTION  *********************/}
+        <section className="testimonals-section">
+          <h3>Client testimonials</h3>
+          <article className="testimonals">
+            {testimonalData.map((person, index) => (
+              <div className="testimonal" key={index}>
+                <img src={person.image} alt={`Image of ${person.name}`}/>
+                <p className="comment">{person.comment}</p>
+                <h4 className="name">{person.name}</h4>
+                <small className="profession">{person.profession}</small>
+              </div>
+            ))}
+          </article>
+        </section>
+        {/***************************** PHOTO-GALLERY SECTION *********************/}
+        <section className="photo-gallery">
+          {galleryData.map((image, index) => (
+            <div className="photo" key={index}>
+          <picture>
+              <source
+                media="(min-width:720px )"
+                srcSet={image.desktopImage}
+              />
+              <img
+                className="header-image"
+                src={image.mobileImage}
+                alt={`Image of ${image.name}`}
+              />
+            </picture>
+          </div>
+          ))}
+
+        </section>
       </main>
+      <footer>
+        <div className="logo">
+
+        </div>
+        <div className="nav-links">
+        </div>
+        </footer>
+
     </>
   );
 };
