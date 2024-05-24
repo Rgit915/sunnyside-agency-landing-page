@@ -29,5 +29,55 @@
   .icon-hover:hover .social-icon {
     @apply fill-white;
   }
- 
+  .menu {
+    position: relative;
+    width: 329px;
+    height: 329px;
+    padding: 1rem;
+  }
+
+  .menu::after {
+    content: "";
+    position: absolute;
+    top: -6%;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-bottom: 20px solid white;
+  }
+
+  .menu li:hover {
+    color: #24303e;
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: -0.11px;
+    background-color: #fbd600;
+    border-radius: 2rem;
+    padding: 0.5rem 1.25rem;
+    text-transform: uppercase;
+  }
+  .nav-links {
+    font-family: "Barlow", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: -0.13px;
+    color: white;
+    padding: 1rem;
+  }
+  .nav-links li:hover {
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: -0.11px;
+    background-color: white;
+    border-radius: 3rem;
+    padding: 0.5rem 1.25rem;
+    text-transform: uppercase;
+    opacity: 23.75%;
+  }
 }
