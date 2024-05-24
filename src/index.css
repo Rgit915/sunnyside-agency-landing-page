@@ -1,3 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-[18px];
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    @apply font-fraunces font-black;
+  }
+  h2 {
+    @apply text-[32px] leading-[39.46px] tracking-[-0.23px] text-very-dark-desaturated-blue;
+  }
+  h3 {
+    @apply text-[28px] leading-[34.52px] tracking-[-0.2px];
+  }
+  p {
+    @apply font-barlow font-semibold text-base leading-8 tracking-[-0.13px];
+  }
+  footer a {
+    @apply hover:text-white;
+  }
+
+  .icon-hover:hover .social-icon {
+    @apply fill-white;
+  }
+ 
+}
