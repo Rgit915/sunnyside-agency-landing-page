@@ -14,7 +14,7 @@
     @apply font-fraunces font-black;
   }
   h2 {
-    @apply text-[32px] leading-[39.46px] tracking-[-0.23px] text-very-dark-desaturated-blue;
+    @apply text-[32px] leading-[39.46px] tracking-[-0.23px] text-very-dark-desaturated-blue font-black;
   }
   h3 {
     @apply text-[28px] leading-[34.52px] tracking-[-0.2px];
@@ -74,10 +74,56 @@
     font-size: 15px;
     line-height: 25px;
     letter-spacing: -0.11px;
-    background-color: white;
+    background-color: #24303e;
     border-radius: 3rem;
     padding: 0.5rem 1.25rem;
     text-transform: uppercase;
     opacity: 23.75%;
+  }
+  .link-more-yellow {
+    position: relative;
+  }
+
+  .link-more-yellow::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 3px;
+    width: 8rem;
+    height: 0.5rem;
+    border-radius: 0.125rem;
+    background-color: #FAD400;
+    opacity: 0.25;
+  }
+
+  .link-more-yellow:hover::after {
+    opacity: 1;
+  }
+
+  .link-more-red {
+    position: relative;
+  }
+
+  .link-more-red::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 3px;
+    width: 8rem;
+    height: 0.5rem;
+    border-radius: 0.125rem;
+    background-color: #FE7766;
+    opacity: 0.25;
+  }
+
+  .link-more-red:hover::after {
+    opacity: 1;
+  }
+
+
+  @screen lg{
+    h2 {
+      @apply text-[40px] leading-[40.32px] tracking-[-0.29px] ;
+    }
   }
 }
