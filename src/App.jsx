@@ -1,13 +1,8 @@
-import logo from "./assets/images/logo.svg";
 import arrowDown from "./assets/images/icon-arrow-down.svg";
 import imageTransformMobile from "./assets/images/mobile/image-transform.jpg";
 import imageTransformDesktop from "./assets/images/desktop/image-transform.jpg";
 import imageStandoutMobile from "./assets/images/mobile/image-stand-out.jpg";
 import imageStandoutDesktop from "./assets/images/desktop/image-stand-out.jpg";
-import facebookIcon from "./assets/images/icon-facebook.svg";
-import instagramIcon from "./assets/images/icon-instagram.svg";
-import twitterIcon from "./assets/images/icon-twitter.svg";
-import pinterestIcon from "./assets/images/icon-pinterest.svg";
 
 import data from "../data.json";
 import NavLinks from "./components/NavLinks";
@@ -18,17 +13,16 @@ const App = () => {
 
   return (
     <>
-      <header className="hero bg-[url(./assets/images/mobile/image-header.jpg)] bg-cover bg-center w-full h-[538px] p-6  flex flex-col justify-between">
+      <header className="hero bg-[url(./assets/images/mobile/image-header.jpg)] bg-cover bg-center w-full h-[538px] p-6  flex flex-col justify-between md:bg-[url(./assets/images/desktop/image-header.jpg)]">
         {/* NAVIGATION MENU */}
-        <NavLinks />
+        <NavLinks/>
 
         <div className="flex flex-col justify-around items-center mb-24 ">
-          <h1 className="title font-fraunces font-[900] text-[40px] leading-[49.32px] tracking-[6.25px] text-white uppercase text-center py-4 ">
-            {" "}
+          <h1 className="title font-fraunces font-black text-[40px] leading-[49.32px] tracking-[6.25px] text-white uppercase text-center py-4 ">
             We are creatives
           </h1>
           <img
-            className="arrow-down py-4"
+            className="arrow-down py-4 md:mb-14"
             src={arrowDown}
             alt="Arrow down icon"
           />
@@ -38,42 +32,41 @@ const App = () => {
         {/***************************** SERVICES SECTION *********************/}
         <section className="services-section">
           {/* FIRST ROW */}
-          <div className="first-row">
-            <picture className="h-[312px]">
+          <div className="first-row md:flex md:flex-row-reverse  w-full">
+            <picture className="">
               <source
                 media="(min-width:720px )"
                 srcSet={imageTransformDesktop}
               />
               <img
-                className="header-image"
+                className="services-image"
                 src={imageTransformMobile}
                 alt="An egg on yellow background"
               />
             </picture>
-            <article className="transform-brand flex flex-col justify-center items-center text-center max-w-sm p-4  space-y-4">
+            <article className="transform-brand flex flex-col justify-center items-center text-center max-w-sm p-4  space-y-4 ">
               <h2> Transform your brand</h2>
               <p className="text-dark-grayish-blue">
                 We are a full-service creative agency specializing in helping
                 brands grow fast. Engage your clients through compelling visuals
                 that do most of the marketing for you.
               </p>
-              <small className=" font-fraunces font-black leading-6 tracking-[1px] text-very-dark-desaturated-blue uppercase">
-                {" "}
-                Learn more{" "}
+              <small className="link-more-yellow font-fraunces font-black leading-6 tracking-[1px] text-very-dark-desaturated-blue uppercase border-b-yellow-50">
+               <a href="#">Learn more</a>
               </small>
             </article>
           </div>
           {/* SECOND ROW */}
-          <div className="second-row">
+          <div className="second-row md:flex">
             <picture>
               <source
                 media="(min-width:720px )"
                 srcSet={imageStandoutDesktop}
               />
               <img
-                className="header-image"
+                className="services-image"
                 src={imageStandoutMobile}
-                alt="An egg on yellow background"
+                alt="standout image"
               />
             </picture>
 
@@ -84,15 +77,14 @@ const App = () => {
                 photographers, videographers, and copywriters, we’ll build and
                 extend your brand in digital places.
               </p>
-              <small className=" font-fraunces font-black leading-6 tracking-[1px] text-very-dark-desaturated-blue uppercase">
-                {" "}
-                Learn more{" "}
+              <small className="link-more-red font-fraunces font-black leading-6 tracking-[1px] text-very-dark-desaturated-blue uppercase">
+                <a href="#">Learn more</a>
               </small>
             </article>
           </div>
           {/* THIRD ROW */}
-          <div className="third-row flex flex-col justify-center items-center ">
-            <article className="graphic-design bg-[url(./assets/images/mobile/image-graphic-design.jpg)] bg-cover bg-center h-[600px] flex flex-col justify-center items-center text-dark-desaturated-cyan">
+          <div className="third-row flex flex-col justify-center items-center md:flex-row ">
+            <article className="graphic-design bg-[url(./assets/images/mobile/image-graphic-design.jpg)] bg-cover bg-center h-[600px] w-full flex flex-col justify-center items-center text-dark-desaturated-cyan md:bg-[url(./assets/images/desktop/image-graphic-design.jpg)]">
               <div className="flex flex-col justify-center items-center text-center mt-auto mb-8 max-w-sm p-4">
                 <h3>Graphic design</h3>
                 <p>
@@ -103,7 +95,7 @@ const App = () => {
               </div>
             </article>
 
-            <article className="photography bg-[url(./assets/images/mobile/image-photography.jpg)] bg-cover bg-center h-[600px] flex flex-col justify-center items-center text-dark-blue ">
+            <article className="photography bg-[url(./assets/images/mobile/image-photography.jpg)] bg-cover bg-center h-[600px] w-full flex flex-col justify-center items-center text-dark-blue md:bg-[url(./assets/images/desktop/image-photography.jpg)]">
               <div className="flex flex-col justify-center items-center text-center mt-auto mb-8 max-w-sm p-4">
                 <h3>Photography</h3>
                 <p>
@@ -119,7 +111,7 @@ const App = () => {
           <h4 className="text-base leading-5 tracking-[4px] text-grayish-blue uppercase">
             Client testimonials
           </h4>
-          <article className="testimonals p-8">
+          <article className="testimonals p-8  md:flex ">
             {testimonalData.map((person, index) => (
               <div
                 className="testimonal flex flex-col justify-around p-4 items-center"
@@ -144,7 +136,7 @@ const App = () => {
           </article>
         </section>
         {/***************************** PHOTO-GALLERY SECTION *********************/}
-        <section className="photo-gallery h-[375] w-full grid grid-cols-2">
+        <section className="photo-gallery h-[375] w-full grid grid-cols-2 md:grid-cols-4">
           {galleryData.map((image, index) => (
             <div className="photo" key={index}>
               <picture>
