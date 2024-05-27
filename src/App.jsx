@@ -30,7 +30,7 @@ const App = () => {
       </header>
       <main>
         {/***************************** SERVICES SECTION *********************/}
-        <section className="services-section">
+        <section className="services-section flex flex-col w-full">
           {/* FIRST ROW */}
           <div className="first-row md:flex md:flex-row-reverse  w-full">
             <picture className="">
@@ -39,14 +39,14 @@ const App = () => {
                 srcSet={imageTransformDesktop}
               />
               <img
-                className="services-image"
+                className="services-image md:w-[50vw]"
                 src={imageTransformMobile}
                 alt="An egg on yellow background"
               />
             </picture>
-            <article className="transform-brand flex flex-col justify-center items-center text-center max-w-sm p-4  space-y-4 ">
+            <article className="transform-brand flex flex-col justify-center items-center text-center md:w-[50vw] p-4 lg:p-12  space-y-4 lg:text-start">
               <h2> Transform your brand</h2>
-              <p className="text-dark-grayish-blue">
+              <p className="text-dark-grayish-blue max-w-sm">
                 We are a full-service creative agency specializing in helping
                 brands grow fast. Engage your clients through compelling visuals
                 that do most of the marketing for you.
@@ -57,22 +57,22 @@ const App = () => {
             </article>
           </div>
           {/* SECOND ROW */}
-          <div className="second-row md:flex">
-            <picture>
+          <div className="second-row md:flex md:w-full">
+            <picture className="">
               <source
                 media="(min-width:720px )"
                 srcSet={imageStandoutDesktop}
               />
               <img
-                className="services-image"
+                className="services-image md:w-[50vw]"
                 src={imageStandoutMobile}
                 alt="standout image"
               />
             </picture>
 
-            <article className="transform-brand flex flex-col justify-center items-center text-center max-w-sm p-4  space-y-4">
+            <article className="stand-out flex flex-col justify-center items-center text-center md:w-[50vw] p-4 lg:p-12 space-y-4 lg:text-start">
               <h2> Stand out to the right audience</h2>
-              <p className="text-dark-grayish-blue">
+              <p className="text-dark-grayish-blue max-w-sm">
                 Using a collaborative formula of designers, researchers,
                 photographers, videographers, and copywriters, we’ll build and
                 extend your brand in digital places.
@@ -83,7 +83,7 @@ const App = () => {
             </article>
           </div>
           {/* THIRD ROW */}
-          <div className="third-row flex flex-col justify-center items-center md:flex-row ">
+          <div className="third-row flex flex-col justify-center items-center md:flex-row w-full">
             <article className="graphic-design bg-[url(./assets/images/mobile/image-graphic-design.jpg)] bg-cover bg-center h-[600px] w-full flex flex-col justify-center items-center text-dark-desaturated-cyan md:bg-[url(./assets/images/desktop/image-graphic-design.jpg)]">
               <div className="flex flex-col justify-center items-center text-center mt-auto mb-8 max-w-sm p-4">
                 <h3>Graphic design</h3>
