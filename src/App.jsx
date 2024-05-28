@@ -44,9 +44,9 @@ const App = () => {
                 alt="An egg on yellow background"
               />
             </picture>
-            <article className="transform-brand flex flex-col justify-center items-center text-center md:w-[50vw] p-4 lg:p-12  space-y-4 lg:text-start">
+            <article className="transform-brand flex flex-col justify-center items-center text-center md:w-[50vw] p-4  space-y-4  lg:py-28 lg:px-36 lg:items-start lg:text-left">
               <h2> Transform your brand</h2>
-              <p className="text-dark-grayish-blue max-w-sm">
+              <p className="text-dark-grayish-blue lg:text-[18px]">
                 We are a full-service creative agency specializing in helping
                 brands grow fast. Engage your clients through compelling visuals
                 that do most of the marketing for you.
@@ -70,9 +70,9 @@ const App = () => {
               />
             </picture>
 
-            <article className="stand-out flex flex-col justify-center items-center text-center md:w-[50vw] p-4 lg:p-12 space-y-4 lg:text-start">
-              <h2> Stand out to the right audience</h2>
-              <p className="text-dark-grayish-blue max-w-sm">
+            <article className="stand-out flex flex-col justify-center items-center text-center md:w-[50vw] p-4 space-y-4 lg:p-28 lg:items-start lg:text-left">
+              <h2 className=""> Stand out to the right audience</h2>
+              <p className="text-dark-grayish-blue lg:text-[18px]  ">
                 Using a collaborative formula of designers, researchers,
                 photographers, videographers, and copywriters, we’ll build and
                 extend your brand in digital places.
