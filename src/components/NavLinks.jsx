@@ -5,6 +5,11 @@ import humburgerMenu from "../assets/images/icon-hamburger.svg";
 
 const NavLinks = () => {
   const [isOpen, setOpen] = useState(false);
+  const [activeLink, setActiveLink] = useState('');
+
+  const handleLinkClick = (link) => {
+    setActiveLink(link);
+  };
 
   const handleOpenMenu = () => {
     setOpen(!isOpen);
@@ -19,18 +24,17 @@ const NavLinks = () => {
           <div>
 
             <ul className="nav-links hidden w-full md:w-1/3 md:flex md:flex-row md:space-x-6">
-              <li>
-                <a href="#about">About</a>
-              </li>
-              <li>
-                <a href="#services">Services</a>
-              </li>
-              <li>
-                <a href="#projects">Projects</a>
-              </li>
-              <li>
-                <a href="#contacts">Contact</a>
-              </li>
+            {['about', 'services', 'projects', 'contacts'].map((link) => (
+          <li key={link}>
+            <a
+              href={`#${link}`}
+              className={`nav-link ${activeLink === link ? 'active' : ''}`}
+              onClick={() => handleLinkClick(link)}
+            >
+              {link.charAt(0).toUpperCase() + link.slice(1)}
+            </a>
+          </li>
+        ))}
             </ul>
           </div>
           <div className="md:hidden">
