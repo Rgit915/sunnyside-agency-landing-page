@@ -66,19 +66,34 @@
     line-height: 25px;
     letter-spacing: -0.13px;
     color: white;
-    padding: 1rem;
   }
-  .nav-links li:hover {
+
+  .nav-links a {
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+
+  .nav-links a:hover {
     font-family: "Fraunces", serif;
     font-weight: 700;
     font-size: 15px;
     line-height: 25px;
     letter-spacing: -0.11px;
-    background-color: #24303e;
-    border-radius: 3rem;
-    padding: 0.5rem 1.25rem;
     text-transform: uppercase;
-    opacity: 23.75%;
+    background-color: rgba(255, 255, 255, 0.25);
+    box-sizing: border-box;
+  }
+
+  .nav-links a.active {
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: -0.11px;
+    background-color: white;
+    color: #24303E;
+    text-transform: uppercase;
   }
   .link-more-yellow {
     position: relative;
@@ -112,7 +127,7 @@
     width: 8rem;
     height: 0.5rem;
     border-radius: 0.125rem;
-    background-color: #FE7766;
+    background-color: #fe7766;
     opacity: 0.25;
   }
 
@@ -120,10 +135,9 @@
     opacity: 1;
   }
 
-
-  @screen lg{
+  @screen lg {
     h2 {
-      @apply text-[40px] leading-[40.32px] tracking-[-0.29px] ;
+      @apply text-[40px] leading-[40.32px] tracking-[-0.29px];
     }
   }
 }
