@@ -44,7 +44,7 @@ const App = () => {
                 alt="An egg on yellow background"
               />
             </picture>
-            <article className="transform-brand flex flex-col justify-center items-center text-center md:w-[50vw] p-4  space-y-4  lg:py-28 lg:px-36 lg:items-start lg:text-left">
+            <article className="transform-brand flex flex-col justify-center items-center text-center md:w-[50vw] p-4  space-y-4 lg:px-8 xl:py-28 xl:px-36 lg:items-start lg:text-left">
               <h2> Transform your brand</h2>
               <p className="text-dark-grayish-blue lg:text-[18px]">
                 We are a full-service creative agency specializing in helping
@@ -70,7 +70,7 @@ const App = () => {
               />
             </picture>
 
-            <article className="stand-out flex flex-col justify-center items-center text-center md:w-[50vw] p-4 space-y-4 lg:p-28 lg:items-start lg:text-left">
+            <article className="stand-out flex flex-col justify-center items-center text-center md:w-[50vw] p-4 space-y-4 lg:px-8 lg:items-start lg:text-left xl:p-28">
               <h2 className=""> Stand out to the right audience</h2>
               <p className="text-dark-grayish-blue lg:text-[18px]  ">
                 Using a collaborative formula of designers, researchers,
@@ -167,7 +167,7 @@ const App = () => {
             />
           </svg>
         </div>
-        <div className="nav-links">
+        <div className="nav-links-footer">
           <ul className="flex space-x-6 font-semibold leading-6 font-barlow tracking-[-0.13px] text-dark-moderate-cyan">
             <li>
               <a href="#about">About</a>
