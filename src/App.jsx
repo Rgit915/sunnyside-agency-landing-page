@@ -1,8 +1,8 @@
-import arrowDown from "./assets/images/icon-arrow-down.svg";
-import imageTransformMobile from "./assets/images/mobile/image-transform.jpg";
-import imageTransformDesktop from "./assets/images/desktop/image-transform.jpg";
-import imageStandoutMobile from "./assets/images/mobile/image-stand-out.jpg";
-import imageStandoutDesktop from "./assets/images/desktop/image-stand-out.jpg";
+import arrowDown from "/images/icon-arrow-down.svg";
+import imageTransformMobile from "/images/mobile/image-transform.jpg";
+import imageTransformDesktop from "/images/desktop/image-transform.jpg";
+import imageStandoutMobile from "/images/mobile/image-stand-out.jpg";
+import imageStandoutDesktop from "/images/desktop/image-stand-out.jpg";
 
 import data from "../data.json";
 import NavLinks from "./components/NavLinks";
@@ -13,7 +13,7 @@ const App = () => {
 
   return (
     <>
-      <header className="hero bg-[url(./assets/images/mobile/image-header.jpg)] bg-cover bg-center w-full h-[538px] p-6  flex flex-col justify-between md:bg-[url(./assets/images/desktop/image-header.jpg)]">
+      <header className="hero bg-[url(/images/mobile/image-header.jpg)] bg-cover bg-center w-full h-[538px] p-6  flex flex-col justify-between md:bg-[url(/images/desktop/image-header.jpg)]">
         {/* NAVIGATION MENU */}
         <NavLinks/>
 
@@ -84,7 +84,7 @@ const App = () => {
           </div>
           {/* THIRD ROW */}
           <div className="third-row flex flex-col justify-center items-center md:flex-row w-full">
-            <article className="graphic-design bg-[url(./assets/images/mobile/image-graphic-design.jpg)] bg-cover bg-center h-[600px] w-full flex flex-col justify-center items-center text-dark-desaturated-cyan md:bg-[url(./assets/images/desktop/image-graphic-design.jpg)]">
+            <article className="graphic-design bg-[url(/images/mobile/image-graphic-design.jpg)] bg-cover bg-center h-[600px] w-full flex flex-col justify-center items-center text-dark-desaturated-cyan md:bg-[url(/images/desktop/image-graphic-design.jpg)]">
               <div className="flex flex-col justify-center items-center text-center mt-auto mb-8 max-w-sm p-4">
                 <h3>Graphic design</h3>
                 <p>
@@ -95,7 +95,7 @@ const App = () => {
               </div>
             </article>
 
-            <article className="photography bg-[url(./assets/images/mobile/image-photography.jpg)] bg-cover bg-center h-[600px] w-full flex flex-col justify-center items-center text-dark-blue md:bg-[url(./assets/images/desktop/image-photography.jpg)]">
+            <article className="photography bg-[url(/images/mobile/image-photography.jpg)] bg-cover bg-center h-[600px] w-full flex flex-col justify-center items-center text-dark-blue md:bg-[url(/images/desktop/image-photography.jpg)]">
               <div className="flex flex-col justify-center items-center text-center mt-auto mb-8 max-w-sm p-4">
                 <h3>Photography</h3>
                 <p>

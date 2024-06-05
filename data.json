@@ -3,42 +3,42 @@
     {
       "name": "Emily R.",
       "comment": "We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.",
-      "image": "./src/assets/images/image-emily.jpg",
+      "image": "./images/image-emily.jpg",
       "profession": "Marketing Director"
     },
     {
       "name": "Thomas S.",
       "comment": "Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.",
-      "image": "./src/assets/images/image-thomas.jpg",
+      "image": "/images/image-thomas.jpg",
       "profession": "Chief Operating Officer"
     },
     {
       "name": "Jennie F.",
       "comment": "Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!",
-      "image": "./src/assets/images/image-jennie.jpg",
+      "image": "/images/image-jennie.jpg",
       "profession": "Business Owner"
     }
   ],
   "photoGallery": [
     {
       "name": "milkbottles",
-      "mobileImage": "./src/assets/images/mobile/image-gallery-milkbottles.jpg",
-      "desktopImage": "./src/assets/images/desktop/image-gallery-milkbottles.jpg"
+      "mobileImage": "/images/mobile/image-gallery-milkbottles.jpg",
+      "desktopImage": "/images/desktop/image-gallery-milkbottles.jpg"
     },
     {
       "name": "orange",
-      "mobileImage": "./src/assets/images/mobile/image-gallery-orange.jpg",
-      "desktopImage": "./src/assets/images/desktop/image-gallery-orange.jpg"
+      "mobileImage": "/images/mobile/image-gallery-orange.jpg",
+      "desktopImage": "/images/desktop/image-gallery-orange.jpg"
     },
     {
        "name": "cone",
-      "mobileImage": "./src/assets/images/mobile/image-gallery-cone.jpg",
-      "desktopImage": "./src/assets/images/desktop/image-gallery-cone.jpg"
+      "mobileImage": "/images/mobile/image-gallery-cone.jpg",
+      "desktopImage": "/images/desktop/image-gallery-cone.jpg"
     },
     {
       "name": "sugar cubes",
-      "mobileImage": "./src/assets/images/mobile/image-gallery-sugar-cubes.jpg",
-      "desktopImage": "./src/assets/images/desktop/image-gallery-sugarcubes.jpg"
+      "mobileImage": "/images/mobile/image-gallery-sugar-cubes.jpg",
+      "desktopImage": "/images/desktop/image-gallery-sugarcubes.jpg"
     }
   ]
 
