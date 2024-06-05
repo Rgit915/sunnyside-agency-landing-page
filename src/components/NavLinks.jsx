@@ -1,7 +1,7 @@
 import { useState } from "react";
 
-import logo from "../assets/images/logo.svg";
-import humburgerMenu from "../assets/images/icon-hamburger.svg";
+import logo from "/images/logo.svg";
+import humburgerMenu from "/images/icon-hamburger.svg";
 
 const NavLinks = () => {
   const [isOpen, setOpen] = useState(false);
