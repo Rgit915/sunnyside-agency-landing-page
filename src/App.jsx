@@ -13,7 +13,7 @@ const App = () => {
 
   return (
     <>
-      <header className="hero bg-[url(/images/mobile/image-header.jpg)] bg-cover bg-center w-full h-[538px] p-6  flex flex-col justify-between md:bg-[url(/images/desktop/image-header.jpg)]">
+      <header className="hero bg-[url(/images/mobile/image-header.jpg)] bg-cover bg-center min-h-screen w-full h-[538px] p-6  flex flex-col justify-between md:bg-[url(/images/desktop/image-header.jpg)]">
         {/* NAVIGATION MENU */}
         <NavLinks />
 
@@ -22,7 +22,7 @@ const App = () => {
             We are creatives
           </h1>
           <img
-            className="arrow-down py-4 md:mb-14"
+            className="arrow-down py-4 mt-10 mb-24 md:mb-36"
             src={arrowDown}
             alt="Arrow down icon"
           />
