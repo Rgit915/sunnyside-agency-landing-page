@@ -32,9 +32,9 @@ Users should be able to:
 
 ### Screenshot
 
-![Sunnyside active states preview](./src/assets/screenshots/sunnyside-active-states-solution-preview.png)
+![Sunnyside active states preview](./src/assets/screenshots/sunnyside-landing-page-soultion-desktop-preview.png)
 
-![Sunnyside mobile preview](./src/assets/screenshots/sunnyside-mobile-solution-preview.png)
+![Sunnyside mobile preview](./src/assets/screenshots/sunnyside-landing-page-mobile-menu.png)
 
 
 ### Links
