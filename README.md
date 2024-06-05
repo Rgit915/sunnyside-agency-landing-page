@@ -34,10 +34,12 @@ Users should be able to:
 
 ![Sunnyside active states preview](./src/assets/screenshots/sunnyside-active-states-solution-preview.png)
 
+![Sunnyside mobile preview](./src/assets/screenshots/sunnyside-mobile-solution-preview.png)
+
 
 ### Links
 
-- Solution URL: [Gihub Repo](https://github.com/Rgit915/sunnyside-agency-landing-page)
+- Solution URL: [Github Repo](https://github.com/Rgit915/sunnyside-agency-landing-page)
 - Live Site URL: [Live Demo](https://sunnyside-agency-landing-page-rora.netlify.app/)
 
 ## My process
@@ -50,3 +52,38 @@ Users should be able to:
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
 - [Tailwind CSS](https://tailwindcss.com/) - For styles
+
+# What I learned
+
+- **Structured Data with JSON**: Utilized JSON data structuring to avoid code repetition and efficiently manage content for the website.
+
+- **Dynamic Data Rendering**: Leveraged JSON data in React components for dynamic content rendering, enhancing flexibility and maintainability.
+
+- **State Management**: Implemented state management in React to handle link clicks and manage menu navigation, especially on smaller screens.
+
+- **Responsive Design**: Ensured optimal layout and responsiveness across various screen sizes, improving the overall user experience.
+
+- **Mobile Navigation**: Positioned and styled the navigation menu for smaller screens, enhancing accessibility and usability on mobile devices.
+
+- **Design Consistency**: Strived to match the provided design as closely as possible, paying attention to details and maintaining design consistency throughout the project.
+
+
+### Continued Development
+
+In future projects, I plan to further explore:
+
+- Incorporating animations and transitions for a more interactive user experience.
+
+### Useful Resources
+
+- [React Documentation](https://reactjs.org/docs/getting-started.html) - The official React documentation is always my go-to resource for understanding React concepts and best practices.
+- [Tailwind CSS Documentation](https://tailwindcss.com/docs) - The Tailwind CSS documentation provides comprehensive guidance on using Tailwind's utility classes effectively.
+
+
+## Author
+
+- Frontend Mentor - [@Rgit915](https://www.frontendmentor.io/profile/Rgit915)
+- Github - [@Rgit915](https://github.com/Rgit915)
+
+## Acknowledgments
+I would like to thank [Frontend Queens](https://beacons.ai/frontendqueens) for providing this challenge and motivating us to work on various aspects of challenges, as well as [Frontend Mentor](https://www.frontendmentor.io/) for their platform that enable developers to practice and enhance their skills through real-world projects.
