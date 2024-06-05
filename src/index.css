@@ -92,7 +92,7 @@
     line-height: 25px;
     letter-spacing: -0.11px;
     background-color: white;
-    color: #24303E;
+    color: #24303e;
     text-transform: uppercase;
   }
   .link-more-yellow {
@@ -107,7 +107,7 @@
     width: 8rem;
     height: 0.5rem;
     border-radius: 0.125rem;
-    background-color: #FAD400;
+    background-color: #fad400;
     opacity: 0.25;
   }
 
@@ -135,6 +135,10 @@
     opacity: 1;
   }
 
+  .icon-hover:hover .social-icon path {
+    fill: #ffffff;
+  }
+  
   @screen lg {
     h2 {
       @apply text-[40px] leading-[40.32px] tracking-[-0.29px];
