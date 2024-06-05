@@ -179,7 +179,7 @@ const App = () => {
           </ul>
         </div>
         <div className="social-icons flex items-center space-x-4 mt-12">
-          <a href="#" className="icon-hover">
+        <a href="#facebook" className="icon-hover" aria-label="Facebook">
             <svg
               className="social-icon"
               width="20"
@@ -193,7 +193,7 @@ const App = () => {
               />
             </svg>
           </a>
-          <a href="#" className="icon-hover">
+          <a href="#Instagram" className="icon-hover" aria-label="Instagram">
             <svg
               className="social-icon"
               width="20"
@@ -207,7 +207,7 @@ const App = () => {
               />
             </svg>
           </a>
-          <a href="#" className="icon-hover">
+          <a href="#Twitter" className="icon-hover" aria-label="Twitter">
             <svg
               className="social-icon"
               width="20"
@@ -221,7 +221,7 @@ const App = () => {
               />
             </svg>
           </a>
-          <a href="#" className="icon-hover">
+          <a href="#pinterest" className="icon-hover" aria-label="Pinterest">
             <svg
               className="social-icon"
               width="20"
